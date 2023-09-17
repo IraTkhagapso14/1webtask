@@ -1,0 +1,65 @@
+table
+{
+border-collapse:collapse;	
+}		
+th,td{
+border:1px solid black;
+padding:8px;
+text-align:center;	
+}
+th{
+background-color:grey;
+color:white;	
+}	
+header{
+background-color: #FFDEAD;
+height: 100px;
+}
+img.car
+{
+	border-radius: 50%;
+            width: 90px;
+            height: 90px;
+			padding:5px 0 10px 200px;
+			
+			
+                   
+   }
+.even
+{
+	background-color:pink;
+	
+}
+#ft
+{
+	background-color:#DB7093;
+	height:100px;
+}
+.ft1
+{
+	padding:20px 0 0 50px;
+	font-size:20px;
+}
+#tr{
+padding-top:20px;
+position:absolute;
+top:20px;
+left:700px;	
+font-style: italic;
+font-size:20px;
+	
+}
+#stroke
+{
+	display: inline-block;
+	position:absolute;
+	top:30px;
+	left:750px;
+	text-decoration: none;
+	word-spacing:25px;
+	font-size:18px;
+}
+#stroke a
+{
+	text-decoration:none;
+}
