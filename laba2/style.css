@@ -28,7 +28,7 @@ img.car
 #vyravn
 {
 width:960px;
-}
+	justify-content:align;
 .even
 {
 	background-color:pink;
