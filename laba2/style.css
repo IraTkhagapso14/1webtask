@@ -28,7 +28,10 @@ img.car
 #vyravn
 {
 width:960px;
-	justify-content:align;
+}
+ul
+{ list-style-position: inside;}
+
 .even
 {
 	background-color:pink;
@@ -58,7 +61,7 @@ font-size:30px;
 	display: inline-block;
 	position:absolute;
 	top:30px;
-	left:1090px;
+	left:1190px;
 	text-decoration: none;
 	word-spacing:25px;
 	font-size:18px;
