@@ -17,7 +17,7 @@ height: 100px;
 }
 img.car
 {
-	border-radius: 50%;
+	
             width: 90px;
             height: 90px;
 			padding:5px 0 10px 50px;
@@ -25,9 +25,9 @@ img.car
 			
                    
    }
-#centr
+#vyravn
 {
-width:960px;	
+width:960px;
 }
 .even
 {
@@ -47,10 +47,10 @@ width:960px;
 #tr{
 padding-top:20px;
 position:absolute;
-top:20px;
-left:100px;	
+top:-10px;
+left:160px;	
 font-style: italic;
-font-size:20px;
+font-size:30px;
 	
 }
 #stroke
@@ -58,7 +58,7 @@ font-size:20px;
 	display: inline-block;
 	position:absolute;
 	top:30px;
-	left:1490px;
+	left:1090px;
 	text-decoration: none;
 	word-spacing:25px;
 	font-size:18px;
