@@ -1,0 +1,169 @@
+body, h1, h2, h3, p, ul, li, table, form, label, input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFDEAD;
+    color: black;
+}
+
+.car {
+    width: 100px;
+    height: 100px;
+    padding-right: 20px;
+    margin-top: -20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-menu.open ul {
+        flex-direction: column;
+        text-align: center;
+        background-color: #FFDEAD;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-menu.open ul li {
+        margin: 10px 0;
+    }
+
+    .nav-menu.open ul li a {
+        font-size: 16px;
+    }
+
+    .nav-menu.open ul.active {
+        display: block;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .car {
+        width: 70px;
+        height: 70px;
+        padding-right: 10px;
+        margin-top: -10px;
+    }
+
+    #vyravn {
+        width: 100%;
+    }
+
+    #vyravn th, #vyravn td {
+        padding: 6px;
+        font-size: 16px;
+    }
+
+    #ft {
+        background-color: #DB7093;
+        text-align: center;
+    }
+
+    .ft1 {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    ul#vyravn {
+        padding: 10px;
+    }
+
+    ul#vyravn li {
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    main {
+        margin: 10px;
+    }
+
+    p img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    form label {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="data"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    button {
+        background-color: #DB7093;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
