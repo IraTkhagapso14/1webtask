@@ -1,25 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="style.css" rel="stylesheet">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>3 task</title>
 </head>
 <body>
     <header>
-        <div class="header-content">
-         <img src="urus.png" class="car" alt="теслакар">   <h1>CarX</h1>
-            <nav>
-                <ul class="rgth">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Новинки</a></li>
-                </ul>
-            </nav>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="urus.png" class="car" alt="тесламоделx">
+                <h3>CarX</h3>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
         </div>
     </header>
-    <main>
-    <center>
-          <ul id="vyravn">
+     <div class="container">
+        <div class="table-block">
+            <h2>Таблица</h2>
+            <table>
+                <tr>
+            <th colspan="2" >Заголовок 1</th>
+            <th colspan="2">Заголовок 2</th>
+
+        </tr>
+        <tr>
+            <td rowspan="2">Строка 1</td>
+            <td class="even">Строка 2</td>
+            <td rowspan="2">Строка 3</td>
+            <td class="even">Строка 4</td>
+			   
+        </tr>
+		
+        <tr>
+            <td>Строка 5</td>
+            <td>Строка 6</td>
+
+        </tr>
+		<tr>
+            <td rowspan="2">Строка 1</td>
+            <td class="even">Строка 2</td>
+            <td rowspan="2">Строка 3</td>
+            <td class="even">Строка 4</td>
+			 
+        </tr>
+        <tr>
+            <td>Строка 5</td>
+            <td>Строка 6</td>
+			  
+        </tr>
+            </table>
+        </div>
+		 <div class="text-block">
+                    <ul id="vyravn">
         <li><a href="https://www.kubsu.ru">Абсолютная ссылка на сайт Кубгу -1 задание</a> </li>
         <li><a href="https://www.kubsu.ru/index.html">Абсолютная ссылка на сайт Кубгу - 2 задание</a> </li>
         <li><a href="https://www.kubsu.ru/index.html"><img src="image.jpg" width="300" height="250" alt="3 задание"></a> </li>
@@ -60,49 +97,10 @@
         </li>
         <li><a href="ftp://username:password@ftp.example.com/path/to/your/file.txt">Ссылка на файл на сервере FTP с авторизацией-21 задание</a></li>
         </ul>
-        </center>
-        <center>
-        <table id="vyravn">
-        <tr class="even">
-        <th colspan="2">1 Колонка</th>
-        <th>2 Колонка</th>
-        <th>3 Колонка</th>
-        <th>4 Колонка</th>
-        </tr>
-        <tr>
-        <td>01 Основные средства</td>
-        <td rowspan="3">02 Амортизация</td>
-        <td>03 Доходные вложения</td>
-        <td>04 Нематериальные активы</td>
-        <td>05 Аморт нематериальные активы</td>
-        </tr>
-        <tr class="even">
-        <td>07 Оборудование к установке</td>
-        <td>08 Внеоборотные активы</td>
-        <td>09 Материалы</td>
-        <td>10 Материалы</td>
-        </tr>
-        <tr>
-        <td>11 Животные</td>
-        <td>14 Снижение стоимости</td>
-        <td>15 Заготовление ценностей</td>
-        <td>16 Отклонение в стоимости</td>
-        </tr>
-        <tr class="even">
-        <td>19 Налог на ДНС</td>
-        <td>20 Основное производство</td>
-        <td>21 Полуфабрикаты</td>
-        <td>23 Вспомогательные пр-ва</td>
-        <td>25 Общепроиз расходы</td>
-        </tr>
-        <tr><td>26 Общехоз расходы</td>
-        <td>28 Брак в пр-ве</td>
-        <td>29 Обслуживающие пр-ва</td>
-        <td>40 Выпуск продукции</td>
-        <td>41 Товары</td></tr>
-        </table>
-        </center>
-        <center>
+        </div>
+		
+    </div>
+		<center>
         <h1>Создание форм в HTML</h1>
         <form action="/" method="post" id="vyravn">
         <label>Введите имя <br/>
@@ -132,10 +130,8 @@
         </label><br/>
         <button>Сохранить</button>
         </form>
-    
-        </center>
-       </main>
-        <footer id="ft">
+		</center>
+			<footer id="ft">
         <p class="ft1">Tkhagapso Ira</p>
         </footer>
 </body>
