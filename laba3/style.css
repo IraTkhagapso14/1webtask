@@ -1,122 +1,112 @@
-        body {
-                margin: 0;
-         
-        }
- 
-        header {
-            background-color:#FFDEAD;
-            color: black;
-            padding: 20px;            
-        }
- 
-   
-        .rgth
-        {
-            position:relative;
-            top:-40px;
-            justify-content: right;
-            font-size:20px;
-        }
- 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: row; 
-        }
- 
-        nav li {
-            margin-right: 20px;
-        }
-        nav li a {
-                  text-decoration:none;
-        }
-        
- 
-
-@media screen and (max-width: 320px) {
-    .header-content {
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    nav li {
-        margin: 10px 0;
-    }
-
-    img.car {
-        width: 70px; 
-        height: 70px; 
-        padding-right: 10px;
-        margin-top: -10px;
-    }
-
-    table#vyravn {
-        width: 100%; 
-        margin: 10px auto; 
-    }
-
-    table#vyravn th, table#vyravn td {
-        padding: 6px; 
-        font-size: 16px; 
-    }
-
-    footer#ft {
-        background-color: #DB7093;
-        text-align: center;
-    }
-
-    .ft1 {
-        font-size: 18px; 
-        padding: 10px 0;
-    }
-
-    ul#vyravn {
-        padding: 10px; 
-    }
-
-    ul#vyravn li {
-        margin-bottom: 10px; 
-    }
-
-
-    p {
-        font-size: 14px;
-        line-height: 1.5; 
-    }
-
-    main {
-                margin: 10px;
-            }
-    p img {
-        max-width: 100%; 
-        height: auto; 
-        margin: 10px 0; 
-    }
+body {
+    margin: 0;
+    padding: 0;
 }
 
+header {
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
 
+.car {
+    width: 90px; 
+    height: 90px; 
+    margin-right: 10px;
+}
 
-      
-        img.car
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-logo {
+    font-size: 24px;
+}
+
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+h3{
+position:absolute;
+top:10px;
+left:110px;
+}
+.container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+		table-block {
+            max-width: 960px; 
+            margin: 0 auto; 
+        }
+        /* Mobile-first media query */
+        @media screen and (min-width: 768px) {
+            .container {
+                flex-direction: column-reverse; 
+            }
+        }
+		       table {
+            width: 100%; 
+            border-collapse: collapse;
+            margin-bottom: 20px; 
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ccc;
+        }
+				.even
 {
-	
-            width: 100px;
-            height:100px;
-            padding-right: 20px;
-            margin-top:-20px;
-            float:left;
-			
-			
-                   
+	background-color:pink;
+}
+		#vyravn li {
+			list-style-position:inside;
+		}
+		.navbar ul {
+    list-style-type: none; 
    }
-   #ft
+        
+         #ft
 {
     background-color:#DB7093;
     height:100px;
@@ -126,27 +116,7 @@
     padding:20px 0 0 50px;
     font-size:20px;
 }
-   .even
-{
-    background-color:pink;
-    
-}
-table
-{
-border-collapse:collapse;    
-}        
-th,td{
-border:1px solid black;
-padding:8px;
-text-align:center;    
-}
-th{
-background-color:grey;
-color:white;    
-}    
-ul
-{ list-style-position: inside;}
-#vyravn
-{
-    width:960px;
-}
+img.car
+{            width: 90px;
+            height: 90px;	         
+   }
