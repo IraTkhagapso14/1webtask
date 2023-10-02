@@ -1,0 +1,29 @@
+.ml-2
+{
+padding-left:10px;
+font-size:20px;
+}
+section
+{
+	padding:50px 0;
+}
+form
+{
+	width:960px;
+	
+}
+  .list-group-item {
+        border: none; 
+        text-align: center; 
+    }
+	.footer {
+            background-color: #ff69b4; 
+            color: white; 
+            text-align: left; 
+            padding: 10px; 
+        }
+		
+.table-pink:nth-child(even) {
+    background-color: #ff69b4;
+    color: white; 
+}
