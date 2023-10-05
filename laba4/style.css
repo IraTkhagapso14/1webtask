@@ -27,3 +27,7 @@ form
     background-color: #ff69b4;
     color: white; 
 }
+.main ul
+{
+	list-style-type:none;
+}
