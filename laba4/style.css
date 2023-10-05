@@ -1,33 +1,16 @@
-.ml-2
-{
-padding-left:10px;
-font-size:20px;
+	ul{
+	list-style:none;
+	}
+	.spisok li {
+    border: none;
 }
-section
-{
-	padding:50px 0;
+.table-pink:nth-child(even) {
+    background-color: #ff69b4; 
+    color: white; 
 }
-form
-{
-	width:960px;
-	
-}
-  .list-group-item {
-        border: none; 
-        text-align: center; 
-    }
-	.footer {
+.footer {
             background-color: #ff69b4; 
             color: white; 
             text-align: left; 
             padding: 10px; 
         }
-		
-.table-pink:nth-child(even) {
-    background-color: #ff69b4;
-    color: white; 
-}
-.main li
-{
-	list-style-type:none;
-}
