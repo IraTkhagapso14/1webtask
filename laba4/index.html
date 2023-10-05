@@ -129,59 +129,75 @@
                   </table>
                     </div>
                 </div> 
-                <div class="order-md-3 order-3">
-                <h2 id="a1">Форма:</h2>
-                    <form action="/" method="POST">
-                    <label>
-        ФИО:<br />
-        <input type="text" name="student_name" placeholder="Иванов Иван Иванович">
-      </label><br />
-      <label>
-        Номер телефона:<br />
-        <input type="number" name="student_pnone">
-      </label><br />
-      <label>
-        Email:<br />
-        <input type="email" name="email" placeholder="Введите вашу почту">
-      </label><br />
-      <label>
-        Дата рождения:<br />
-        <input type="date" name="date">
-      </label><br />
-      <label>
-        Пол:<br />
-          <input name=sex type="radio" value="male">
-          Мужской</label>
-      <label>
-          <input name=sex type="radio" value="female" checked="checked">
-          Женский</label> <br />
-      <label>
-      Любимый язык программирования: <br>
-        <select name="PL[]" multiple="multiple">
-            <option value="Pascal">Pascal</option>
-            <option value="C">C</option>
-            <option value="C++">C++</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="PHP">PHP</option>
-            <option value="Python">Python</option>
-            <option value="Haskel">Haskel</option>
-            <option value="Clojure">Clojure</option>
-            <option value="Prolog">Prolog</option>
-            <option value="Scala">Scala</option>
-        </select>
-      </label><br />
-      <label>
-        Биография:<br />
-        <textarea name="student_bio"></textarea>
-      </label><br />
-      <label> С контрактом ознакомлен(а):<input type="checkbox" name="check"></label><br />
-      <input type="submit" value="Сохранить">
-      </form>
-                </div>  
-            </div>
+               <form class="mx-auto w-100" style="max-width: 960px;">
+<div class="container mt-4">
+        <div class="form-group">
+            <label for="firstName">ФИО:</label>
+          
+            <input type="text" class="form-control" id="firstName" name="firstName">
         </div>
     </div>
-
+    <div class="container mt-4">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+    </div>
+<div class="container mt-4">
+        <div class="form-group">
+            <label for="phone">Номер телефона:</label>
+            
+            <input type="tel" class="form-control" id="phone" name="phone">
+        </div>
+    </div>
+   <div class="container mt-4">
+        <div class="form-group">
+            <label for="dob">Дата рождения:</label>
+            
+            <input type="date" class="form-control" id="dob" name="dob">
+        </div>
+    </div>
+<div class="container mt-4">
+              <div class="form-check">
+            
+            <input class="form-check-input" type="radio" name="radiobutton" id="option1" value="option1">
+            <label class="form-check-label" for="option1">Мужской</label>
+        </div>
+        <div class="form-check">
+          
+            <input class="form-check-input" type="radio" name="radiobutton" id="option2" value="option2">
+            <label class="form-check-label" for="option2">Женский</label>
+        </div>
+    </div>
+ 
+ <div class="container mt-4">
+<select class="form-select" aria-label="Default select example">
+  <option selected>Любимый язык  программирования</option>
+  <option value="1">Pascal</option>
+  <option value="2">PHP</option>
+  <option value="3">C++</option>
+</select>
+</div>
+   
+    
+ 
+ <div class="container mt-4">
+        <div class="form-group">
+            <label for="exampleTextarea">Введите текст:</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="4"></textarea>
+        </div>
+    </div>
+      <div class="container mt-4">
+        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+            <label class="form-check-label" for="exampleCheckbox">Выберите опцию</label>
+        </div>
+    </div>
+<div class="container mt-4">
+              <button type="button" class="btn btn-primary">Сохранить</button>
+    </div>
+</form>
 <div class="container-fluid mt-4">
         <div class="footer">
             Tkhagapso Ira
