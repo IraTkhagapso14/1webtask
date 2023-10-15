@@ -39,8 +39,6 @@
             service2: [5, 8, 12],
             service3: [7, 11, 17],
         };
-
-        // Define a mapping for product options
         const productOptions = {
             option1: 0,
             option2: 1,
@@ -60,14 +58,11 @@
                 totalCostSpan.textContent = total;
             }
         }
-
-        // Add event listeners to update the total cost when inputs change
         quantityInput.addEventListener("input", calculateTotal);
         serviceRadios.forEach(radio => radio.addEventListener("change", calculateTotal));
         productSelect.addEventListener("change", calculateTotal);
         propertyCheckbox.addEventListener("change", calculateTotal);
 
-        // Initial calculation
         calculateTotal();
     </script>
 </body>
