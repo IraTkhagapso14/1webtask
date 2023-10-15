@@ -1,0 +1,30 @@
+      body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #calculator {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 5px;
+            margin: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    
