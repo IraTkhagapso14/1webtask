@@ -1,15 +1,13 @@
-  body {
+    body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
  
 .calculator {
     max-width: 400px;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
 }
  
 h1 {
@@ -36,7 +34,7 @@ select, input {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: red;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -44,7 +42,7 @@ button {
 }
  
 button:hover {
-    background-color: #0056b3;
+    background-color: red;
 }
  
 .result {
