@@ -8,7 +8,7 @@
 
         if (selectedProduct in prices && !isNaN(quantityValue) && quantityValue > 0) {
             const price = prices[selectedProduct];
-            const quantity = parseInt(quantityValue);
+            const quantity = quantityInput.value;
             const total = price * quantity;
             totalSpan.textContent = total + " ₽";
         } else {
