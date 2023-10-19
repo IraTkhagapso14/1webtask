@@ -4,10 +4,10 @@ const totalSpan = document.getElementById("total");
 const prices = { item1: 200, item2: 300, item3: 400 };
 function calculateTotal() {
     const selectedProduct = productSelect.value;
-    const quantityValue = quantityInput.value; // Get the quantity as a string
+    const quantityValue = quantityInput.value;
     if (selectedProduct in prices && !isNaN(quantityValue) && quantityValue > 0) {
         const price = prices[selectedProduct];
-        const quantity = parseInt(quantityValue); // Parse the quantity as an integer
+        const quantity = parseInt(quantityValue); 
         const total = price * quantity;
         totalSpan.textContent = total + " ₽";
     } else {
