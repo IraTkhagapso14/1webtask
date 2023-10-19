@@ -6,7 +6,7 @@
         const selectedProduct = productSelect.value;
         const quantityValue = quantityInput.value;
 
-        if (selectedProduct in prices && !isNaN(quantityValue) && quantityValue > 0) {
+        if (!isNaN(quantityValue) && quantityValue > 0) {
             const price = prices[selectedProduct];
             const quantity = quantityInput.value;
             const total = price * quantity;
