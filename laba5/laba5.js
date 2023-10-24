@@ -5,7 +5,7 @@ function itogl() {
         const prices = { product1: 200, product2: 300, product3: 400 };
         const selectedProduct = productSelect.value;
         const kolvoValue = kolvoInput.value;
-        if (!isNaN(kolvoValue) && kolvoValue > 0) {
+        if (!isNaN(kolvoValue) && kolvoValue > 0) { 
             const price = prices[selectedProduct];
             const kolvo = kolvoInput.value;
             const total = price * kolvo;
