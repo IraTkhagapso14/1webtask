@@ -1,22 +1,21 @@
-    function calculateTotal() {
+function itogl() {
         const productSelect = document.getElementById("product");
-        const quantityInput = document.getElementById("quantity");
+        const kolvoInput = document.getElementById("kolvo");
         const totalSpan = document.getElementById("total");
-        const prices = { item1: 200, item2: 300, item3: 400 };
+        const prices = { product1: 200, product2: 300, product3: 400 };
         const selectedProduct = productSelect.value;
-        const quantityValue = quantityInput.value;
-
-        if (!isNaN(quantityValue) && quantityValue > 0) {
+        const kolvoValue = kolvoInput.value;
+        if (!isNaN(kolvoValue) && kolvoValue > 0) {
             const price = prices[selectedProduct];
-            const quantity = quantityInput.value;
-            const total = price * quantity;
+            const kolvo = kolvoInput.value;
+            const total = price * kolvo;
             totalSpan.textContent = total + " ₽";
-        } else {
+        } 
+		else {
             totalSpan.textContent = "Ошибка ввода";
         }
     }
-
     window.addEventListener("DOMContentLoaded", function (event) {
         const calculateButton = document.getElementById("calculate");
-        calculateButton.addEventListener("click", calculateTotal);
+        calculateButton.addEventListener("click", itogl);
     });
