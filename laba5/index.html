@@ -11,17 +11,17 @@
          
     <h1>Калькулятор стоимости заказов</h1>
       <button id="calculate">Рассчитать стоимость</button>
-    <div class="input-group">
+    <div class="vybor">
         <label for="product">Выберите товар:</label>
         <select id="product">
-            <option value="item1">Молоко-200</option>
-            <option value="item2">Кефир - 300</option>
-            <option value="item3">Мясо - 400</option>
+            <option value="product1">Молоко-200</option>
+            <option value="product2">Кефир - 300</option>
+            <option value="product3">Мясо - 400</option>
         </select>
     </div>
-    <div class="input-group">
-        <label for="quantity">Количество товара:</label>
-        <input type="number" id="quantity" min="1" value="1">
+    <div class="vybor">
+        <label for="kolvo">Количество товара:</label>
+        <input type="number" id="kolvo" min="1" value="1">
     </div>
     <div class="result">
         <p>Стоимость заказа: <span id="total">0 ₽</span></p>
