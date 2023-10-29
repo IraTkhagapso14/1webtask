@@ -1,48 +1,49 @@
-        const quantityInput = document.getElementById("quantity");
-        const serviceRadios = document.querySelectorAll('input[name="service"]');
-        const productOptions = document.querySelector(".product-options");
-        const additionalProperties = document.querySelector(".additional-properties");
-        const totalCostSpan = document.getElementById("totalCost");
-		
+const kolvoInput = document.getElementById("kolvo");
+    const servradio = document.querySelectorAll('input[name="service"]');
+    const tovaroption = document.querySelector(".dopoptions");
+    const dopusluga = document.querySelector(".dopoprop");
+    const finalsum = document.getElementById("totalCost");
 
-        const prices = {service1: 10,service2: 15, service3: 20,};
+    const prices = { service1: 10, service2: 15, service3: 20 };
+    const tsenanaprod = { product1: 200, product2: 300, product3: 400 };
 
-        const productPrices = {item1: 200, item2: 300, item3: 400,};
+    function itog() {
+        const chosenservice = document.querySelector('input[name="service"]:checked').value;
+        const kolvo = Number(kolvoInput.value);
 
-        function calculateTotal() {
-            const selectedService = document.querySelector('input[name="service"]:checked').value;
-            const quantity = parseInt(quantityInput.value);
+        if (chosenservice) {
+            let total = 0;
 
-            if (selectedService) {
-                let total = 0;
-
-                if (selectedService === "service2") {
-                    const selectedProduct = productOptions.querySelector("select").value;
-                    const productPrice = productPrices[selectedProduct];
-                    total = prices[selectedService] * quantity;
-                } else if (selectedService === "service3") {
-                    total = additionalProperties.querySelector("input").checked ? 2 * prices[selectedService] * quantity : prices[selectedService] * quantity;
-                } else {
-                    total = prices[selectedService] * quantity;
-                }
-
-                totalCostSpan.textContent = total;
-            }
-
-            if (selectedService === "service2") {
-                productOptions.style.display = "block";
-                additionalProperties.style.display = "none";
-            } else if (selectedService === "service3") {
-                productOptions.style.display = "none";
-                additionalProperties.style.display = "block";
+            if (chosenservice === "service2") {
+                const selectedProduct = tovaroption.querySelector("select").value;
+                const productPrice = tsenanaprod[selectedProduct];
+                total = prices[chosenservice] * kolvo + productPrice;
+            } else if (chosenservice === "service3") {
+                total = dopusluga.querySelector("input").checked
+                    ? 2 * prices[chosenservice] * kolvo
+                    : prices[chosenservice] * kolvo;
             } else {
-                productOptions.style.display = "none";
-                additionalProperties.style.display = "none";
+                total = prices[chosenservice] * kolvo;
             }
+
+            finalsum.textContent = total;
         }
 
-        quantityInput.addEventListener("input", calculateTotal);
-        serviceRadios.forEach(radio => radio.addEventListener("change", calculateTotal));
-        additionalProperties.querySelector("input").addEventListener("change", calculateTotal);
+        if (chosenservice === "service2") {
+            tovaroption.style.display = "block";
+            dopusluga.style.display = "none";
+        } else if (chosenservice === "service3") {
+            tovaroption.style.display = "none";
+            dopusluga.style.display = "block";
+        } else {
+            tovaroption.style.display = "none";
+            dopusluga.style.display = "none";
+        }
+    }
 
-        calculateTotal();
+    kolvoInput.addEventListener("input", itog);
+    servradio.forEach((radio) => radio.addEventListener("change", itog));
+    dopusluga.querySelector("input").addEventListener("change", itog);
+    tovaroption.querySelector("select").addEventListener("change", itog);
+
+    itog();
