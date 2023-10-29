@@ -1,4 +1,4 @@
-        .calculator {
+.calculator {
             max-width: 400px;
             margin: 0 auto;
             padding: 20px;
@@ -10,10 +10,10 @@
             background-color: #f0f0f0;
         }
 
-        .product-options {
+        .dopoptions {
             display: none;
         }
 
-        .additional-properties {
+        .dopoprop {
             display: none;
         }
