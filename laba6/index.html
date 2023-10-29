@@ -2,34 +2,39 @@
 <html>
 <head>
     <title>Калькулятор стоимости товара</title>
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="calculator">
-        <h1>Калькулятор стоимости заказов</h1>
-        <label for="quantity">Количество:</label>
-        <input type="number" id="quantity" value="1"><br><br>
+<form id="calculator">
+    <h1>Калькулятор стоимости заказов</h1>
+    <label for="kolvo">Количество:</label>
+    <input type="number" id="kolvo" value="1">
+    <button id="resetKolvo">Сброс</button><br>
+    <p class="errormes" id="errorMessage"></p>
 
-        <label>Тип услуги:</label>
-        <input type="radio" name="service" value="service1" checked> 1 Услуга
-        <input type="radio" name="service" value="service2"> 2 Услуга
-        <input type="radio" name="service" value="service3"> 3 Услуга<br><br>
+    <label>Тип услуги:</label>
+    <input type="radio" name="service" value="service1" checked> 1 Услуга
+    <input type="radio" name="service" value="service2"> 2 Услуга
+    <input type="radio" name="service" value="service3"> 3 Услуга<br>
 
-        <div class="product-options">
-            <label for="product">Выберите товар:</label>
-            <select id="product">
-                <option value="item1">Молоко-200</option>
-                <option value="item2">Кефир - 300</option>
-                <option value="item3">Мясо - 400</option>
-            </select>
-        </div>
+    <div class="prodoption">
+        <label for="product">Выберите товар:</label>
+        <select id="product">
+            <option value="product1">Молоко-200</option>
+            <option value="product2">Кефир - 300</option>
+            <option value="product3">Мясо - 400</option>
+        </select>
+    </div>
 
-        <div class="additional-properties">
-            <label for="property">Дополнительная функция:</label>
-            <input type="checkbox" id="property"> Включить в заказ
-        </div>
+    <div class="dopproperty">
+        <label for "property">Дополнительная функция:</label>
+        <input type="checkbox" id="property"> Включить в заказ
+    </div>
 
-        <p>Стоимость: <span id="totalCost">0</span></p>
-    </form>
-    <script src="laba6.js">
-    </script>
+    <p>Стоимость: <span id="totalCost">0</span></p>
+</form>
+<script src="laba6.js">    
+</script>
+
+</body>
+</html>
