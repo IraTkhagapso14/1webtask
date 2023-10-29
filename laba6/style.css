@@ -1,4 +1,4 @@
-.calculator {
+        .calculator {
             max-width: 400px;
             margin: 0 auto;
             padding: 20px;
@@ -10,10 +10,14 @@
             background-color: #f0f0f0;
         }
 
-        .dopoptions {
+        .prodoption {
             display: none;
         }
 
-        .dopoprop {
+        .dopproperty {
             display: none;
+        }
+
+        .errormes {
+            color: red;
         }
