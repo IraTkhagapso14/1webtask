@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+ document.addEventListener('DOMContentLoaded', function() {
             $(".multiple-items").slick({
                 dots: true,
                 infinite: true,
@@ -24,4 +24,4 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 ]
             });
-        }, false);
+        });
