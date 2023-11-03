@@ -1,0 +1,27 @@
+ body {
+            background: #87cefa;
+        }
+        .content {
+            margin: auto;
+            padding: 50px;
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+        .slider {
+            display: flex;
+        }
+        .slide {
+            width: 400px;
+            height: 300px;
+            margin-right: 10px;
+        }
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image img {
+            width: 400px;
+            height: 300px; 
+        }
