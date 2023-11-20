@@ -4,9 +4,11 @@ const feedbackForm = document.getElementById('feedbackForm');
 const sucmes = document.getElementById('sucmes');
 const ermes = document.getElementById('ermes');
 openPopupButton.addEventListener('click', () => {
+  openPopupButton.style.display = 'none'; 
   popup.style.display = 'block';
   history.pushState(null, '', '/feedback');
 });
+
 window.addEventListener('popstate', () => {
   popup.style.display = 'none';
 });
